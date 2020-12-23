@@ -10,7 +10,7 @@ import pom.LoginPage;
 
 public class TC001 {
 	public static void main(String[] args) throws InterruptedException {
-		System.setProperty("webdriver.chrome.driver", "D:\\FreshDownloads\\chromedriver_win32 (4)\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./drivers/chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
 		driver.get("https://demo.actitime.com/login.do");
